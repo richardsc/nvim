@@ -3,7 +3,6 @@ return {
     {
         "R-nvim/R.nvim",
         lazy = false,
-        opts = { assignment_keymap = "_" },
         config = function()
             -- Create a table with the options to be passed to setup()
             local opts = {
@@ -13,6 +12,7 @@ return {
                         vim.api.nvim_buf_set_keymap(0, "v", "<Enter>", "<Plug>RSendSelection", {})
                     end
                 },
+                assignment_keymap = "_",
                 R_args = { "--quiet", "--no-save" },
                 min_editor_width = 72,
                 rconsole_width = 78,

@@ -51,13 +51,13 @@ return {
             })
         end,
     },
-    "R-nvim/cmp-r",
-    {
-        "hrsh7th/nvim-cmp",
-        -- filetypes = { "r", "rmd", "quarto", "rnoweb", "rhelp" },
-        config = function()
-            require("cmp").setup({ sources = { { name = "cmp_r" } } })
-            require("cmp_r").setup({})
-        end,
-    },
+    -- "R-nvim/cmp-r",
+    -- {
+    --     "hrsh7th/nvim-cmp",
+    --     -- filetypes = { "r", "rmd", "quarto", "rnoweb", "rhelp" },
+    --     config = function()
+    --         require("cmp").setup({ sources = { { name = "cmp_r" } } })
+    --         require("cmp_r").setup({})
+    --     end,
+    -- },
 }

@@ -1,9 +1,4 @@
-tChantelle
-lunarvim
-lazyvim
-colourscheme
-astronvim
-neovim
+.DS_Store
 spell/*
 lazy-lock.json
 lazyvim.json

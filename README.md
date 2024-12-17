@@ -51,3 +51,13 @@ lua/lazy/core/loader.lua:509>
 </details>
 
 While I'm not 100% sure why this happened, it seems to be a defaults change in LazyVim so that the nvim-cmp plugin is no longer enabled by default. To fix, open nvim, hit "x" to get the Extras menu, navigate to find `coding.nvim-cmp`, and hit "x" to enable it.
+
+On the other hand, the completion engine that seems to be provided as default now ([Blink])[https://www.lazyvim.org/extras/coding/blink] actually seems pretty good! Maybe I should try it for awhile.
+
+## fzf instead of telescope as default in LazyVim 14.0
+
+See:
+
+https://github.com/LazyVim/LazyVim/releases/tag/v14.0.0
+
+where fzf is now the default "picker" in LazyVim, instead of telescope. In order to get a new enough version on Ubuntu 22.04 I had to install homebrew and install it that way.

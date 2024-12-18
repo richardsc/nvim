@@ -66,7 +66,7 @@ where fzf is now the default "picker" in LazyVim, instead of telescope. In order
 
 * open a terminal in the root directory with <leader>ft and in the current directory with <leader>fT.
 * open a file browser split with neo-tree in root using <leader>e and in cwd with <leader>E
+  * to show hidden files in the neo-tree type H
 * open a buffer explorer with <leader>be
 * switch between splits using: Ctrl-j/k/h/l
 * cancel a split with Ctrl-w q.
-

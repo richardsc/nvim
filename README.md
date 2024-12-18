@@ -61,3 +61,12 @@ See:
 https://github.com/LazyVim/LazyVim/releases/tag/v14.0.0
 
 where fzf is now the default "picker" in LazyVim, instead of telescope. In order to get a new enough version on Ubuntu 22.04 I had to install homebrew and install it that way.
+
+## 2024-12-17: Some stuff I've been learning:
+
+* open a terminal in the root directory with <leader>ft and in the current directory with <leader>fT.
+* open a file browser split with neo-tree in root using <leader>e and in cwd with <leader>E
+* open a buffer explorer with <leader>be
+* switch between splits using: Ctrl-j/k/h/l
+* cancel a split with Ctrl-w q.
+

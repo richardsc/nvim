@@ -49,7 +49,7 @@ return {
             -- },
 
             keymap = {
-                preset = "enter",
+                preset = "default",
                 ["<TAB>"] = { "select_and_accept" },
             },
         }

@@ -70,3 +70,9 @@ where fzf is now the default "picker" in LazyVim, instead of telescope. In order
 * open a buffer explorer with <leader>be
 * switch between splits using: Ctrl-j/k/h/l
 * cancel a split with Ctrl-w q.
+
+## Fix the markdown line-length warning (i.e. make it go away), from [Dan](github.com/dankelley/nvim.git)
+
+Create a file in the same directory of your markdown file, named .markdownlint.yaml and containing the following. I got this hint from a posting by David Anson, who is the author of markdownlint and so I think this is a good source.
+
+MD013: false

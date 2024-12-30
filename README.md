@@ -7,7 +7,6 @@ This is based on a starter template for [LazyVim](https://github.com/LazyVim/Laz
 After a lazyvim update, it started showing errors such as below:
 <details>
   <summary>Nvim error output</summary>
-```
 Failed to source `/home/richardsc/.local/share/nvim/lazy/cmp-r/after/plugin/cmp_r.lua`
 
 vim/_editor.lua:0: /home/richardsc/.config/nvim/init.lua..nvim_exec2() called at /home/richardsc/.config/nvim/init.
@@ -43,7 +42,7 @@ lua/lazy/core/loader.lua:509>
 ^I[C]: in function 'require'
 ^I/home/richardsc/.config/nvim/init.lua:2: in main chunk
 
-# stacktrace:
+stacktrace:
   - vim/_editor.lua:0 _in_ **cmd**
   - lua/config/lazy.lua:17
   - init.lua:2

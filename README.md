@@ -76,3 +76,28 @@ where fzf is now the default "picker" in LazyVim, instead of telescope. In order
 Create a file in the same directory of your markdown file, named .markdownlint.yaml and containing the following. I got this hint from a posting by David Anson, who is the author of markdownlint and so I think this is a good source.
 
 MD013: false
+
+### Better solution to the MD013 warning:
+
+The above solution was bugging me, because it isn't global, so I had to create the yaml file in every directory that I am editing a markdown file. Some extended googling and trial and error lead me to [here](https://github.com/LazyVim/LazyVim/discussions/4094#discussioncomment-10178217), which, after adding the `lua/plugins/lint.lua` file as below:
+
+```lua
+local HOME = os.getenv("HOME")
+return {
+  "mfussenegger/nvim-lint",
+  optional = true,
+  opts = {
+    linters = {
+      ["markdownlint-cli2"] = {
+        args = { "--config", HOME .. "/.markdownlint-cli2.yaml", "--" },
+      },
+    },
+  },
+}
+```
+and then creating the `.markdownlint-cli2.yaml` file as decribed, i.e. with:
+```yaml
+config:
+  MD013: false
+```
+had the desired effect!

@@ -47,7 +47,6 @@ lua/lazy/core/loader.lua:509>
   - vim/_editor.lua:0 _in_ **cmd**
   - lua/config/lazy.lua:17
   - init.lua:2
-```
 </details>
 
 While I'm not 100% sure why this happened, it seems to be a defaults change in LazyVim so that the nvim-cmp plugin is no longer enabled by default. To fix, open nvim, hit "x" to get the Extras menu, navigate to find `coding.nvim-cmp`, and hit "x" to enable it.

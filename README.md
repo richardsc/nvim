@@ -124,4 +124,6 @@ Another source that might be helpful is from [someone's dotfile config](https://
 
 Something else I need to learn about, and implement, is how to use snippets. One options I have seen around is `luasnip`.
 
+This looks like a good resource:
 
+https://www.youtube.com/watch?v=sBbplGeFffY&t=1s

@@ -99,3 +99,23 @@ config:
   MD013: false
 ```
 had the desired effect!
+
+## blink.cmp and changing keybindings
+
+I've switched to using the (now default) blink.cmp completion engine, and I've been trying to figure out how to change the keybindings. Currently what I've been using in my configuration for blink is something like the following:
+```{lua}
+return {
+    {
+        "saghen/blink.cmp",
+        opts = {
+            keymap = {
+                preset = "default",
+                ["<TAB>"] = { "select_and_accept" },
+            },
+        }
+    }
+}
+```
+which is supposed to change the default "select_and_accept" keybinding from <CR> to <TAB>. The problem is that it seems to work somewhat inconsistently, especially on MacOS/iterm2, and I don't know why.
+
+Another source that might be helpful is from [someone's dotfile config](https://github.com/garlicbreadcleric/nvim-config/blob/12460a0a84a533d14e5489dfa2f5d3d8346e7923/lua/features/completion.lua#L5). I don't think I'd want to change the default "up"/"down" navigation keybindings, but apparently this is supposed to work. Perhaps I should just accept the other default of "<c-y>" which seems to be pretty common.

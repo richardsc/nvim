@@ -58,12 +58,12 @@ return {
                     -- Disabling fallbacks as my snippets wouldn't show up when editing
                     -- lua files
                     -- fallbacks = { "snippets", "buffer" },
-                    score_offset = 90, -- the higher the number, the higher the priority
+                    score_offset = 100, -- the higher the number, the higher the priority
                 },
                 path = {
                     name = "Path",
                     module = "blink.cmp.sources.path",
-                    score_offset = 25,
+                    score_offset = 50,
                     -- When typing a path, I would get snippets and text in the
                     -- suggestions, I want those to show only if there are no path
                     -- suggestions
@@ -83,7 +83,7 @@ return {
                     max_items = 3,
                     module = "blink.cmp.sources.buffer",
                     min_keyword_length = 4,
-                    score_offset = 15, -- the higher the number, the higher the priority
+                    score_offset = 25, -- the higher the number, the higher the priority
                 },
                 copilot = {
                     name = "copilot",
@@ -91,7 +91,7 @@ return {
                     module = "blink-cmp-copilot",
                     kind = "Copilot",
                     min_keyword_length = 3,
-                    score_offset = 10, -- the higher the number, the higher the priority
+                    score_offset = 25, -- the higher the number, the higher the priority
                     async = true,
                 },
             },

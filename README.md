@@ -137,3 +137,5 @@ After reading about lazygit in the [LVFAD book](https://lazyvim-ambitious-devs.p
 One complaint though is that I sommetimes found that I'd fire up lazygit when I had unsaved buffers, which would then mean I'd need to fire it up again and either amend the commit or create another commit (hello "." commit messages ...). Somewhat randomly while browsing r/nvim, I saw [the lazygit-confirm](https://github.com/thelastpsion/lazygit-confirm.nvim) plugin, which simply pops up a confirmation dialog, and can be configured with an option to just "Save (A)ll and Continue", which saves the buffers and _then_ opens lazygit.
 
 A problem with this, is that the Ubuntu neovim unstable version (as of 2025-01-29) has a bug that causes the confirmation dialog to not display. Just going to wait out the fix, because trying to find other Ubuntu compatible neovim versions is a pain.
+
+I can't wait to see what other cool stuff I can learn about in the LazyVim book!

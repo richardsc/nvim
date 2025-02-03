@@ -1,11 +1,11 @@
 return {
-    -- {
-    --     "LazyVim/LazyVim",
-    --     opts = {
-    --         -- colorscheme = "catppuccin-frappe",
-    --         colorscheme = "tokyonight",
-    --     }
-    -- },
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            -- colorscheme = "catppuccin-frappe",
+            colorscheme = "tokyonight-night",
+        }
+    },
     {
         "folke/tokyonight.nvim",
         lazy = false,

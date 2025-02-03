@@ -10,7 +10,7 @@ return {
         "folke/tokyonight.nvim",
         lazy = false,
         priority = 1000,
-        style = "moon",
+        style = "night",
         opts = {
             -- on_highlights = function(hl)
             --     hl.comment = { bg = "#000000", fg = "#444444" }

@@ -16,7 +16,6 @@ return {
                     end
                 },
                 pdfviewer = "",
-                assignment_keymap = "_",
                 R_args = { "--quiet", "--no-save" },
                 min_editor_width = 72,
                 rconsole_width = 78,

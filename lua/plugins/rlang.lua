@@ -8,6 +8,9 @@ return {
             local opts = {
                 hook = {
                     on_filetype = function()
+                        vim.api.nvim_buf_set_keymap(0, "i", "_", "<Plug>RInsertAssign", { noremap = true })
+                        vim.api.nvim_buf_set_keymap(0, "i", "<", "<Plug>RnwInsertChunk", { noremap = true })
+                        vim.api.nvim_buf_set_keymap(0, "i", "`", "<Plug>RmdInsertChunk", { noremap = true })
                         vim.api.nvim_buf_set_keymap(0, "n", "<Enter>", "<Plug>RDSendLine", {})
                         vim.api.nvim_buf_set_keymap(0, "v", "<Enter>", "<Plug>RSendSelection", {})
                     end

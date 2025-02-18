@@ -95,7 +95,7 @@ return {
                     async = true,
                 },
             },
-            cmdline = {},
+            -- cmdline = {},
         },
 
         keymap = {

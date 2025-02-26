@@ -1,5 +1,11 @@
 return {
     {
+        'Kicamon/markdown-table-mode.nvim',
+        config = function()
+            require('markdown-table-mode').setup()
+        end
+    },
+    {
         'MeanderingProgrammer/render-markdown.nvim',
         dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
         -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
@@ -44,11 +50,5 @@ return {
                 },
             })
         end,
-    },
-    {
-        'Kicamon/markdown-table-mode.nvim',
-        config = function()
-            require('markdown-table-mode').setup()
-        end
     }
 }

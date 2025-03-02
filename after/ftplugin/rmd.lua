@@ -1,2 +1,0 @@
--- vim.api.nvim_buf_set_keymap(0, "n", "<localleader>rc", "i<Plug>RmdInsertChunk", { noremap = true })
--- vim.api.nvim_buf_set_keymap(0, "i", "`", "<Plug>RmdInsertChunk", { noremap = true })

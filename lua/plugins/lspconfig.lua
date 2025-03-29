@@ -1,8 +1,8 @@
 return {
     "neovim/nvim-lspconfig",
     opts = {
-             autoformat = false,
-             -- inlay_hints = { enabled = false },
+        autoformat = false,
+        -- inlay_hints = { enabled = false },
     },
     config = function()
         vim.api.nvim_create_autocmd("LspAttach", {

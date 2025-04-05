@@ -149,3 +149,5 @@ It's so easy to just update all plugins to the most bleeding edge version, but s
 ```
 
 which will show the recent history of all installed plugins. For the one you want to roll back, move the cursor to the commit you want (e.g. hover on the commit hash), and hit "r" to roll back to that commit. You can also use the `:Lazy revert` command to revert a plugin to a specific commit.
+
+There are some helpful tips [here](https://www.reddit.com/r/neovim/comments/1d6iabx/how_do_you_revert_from_lazy_plugin_update/)

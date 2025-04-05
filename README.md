@@ -139,3 +139,13 @@ One complaint though is that I sommetimes found that I'd fire up lazygit when I 
 A problem with this, is that the Ubuntu neovim unstable version (as of 2025-01-29) has a bug that causes the confirmation dialog to not display. Just going to wait out the fix, because trying to find other Ubuntu compatible neovim versions is a pain.
 
 I can't wait to see what other cool stuff I can learn about in the LazyVim book!
+
+## Rolling back a plugin update
+
+It's so easy to just update all plugins to the most bleeding edge version, but sometimes that can break things. If you want to roll back a plugin update, you can do so by running the following command in nvim:
+
+```vim
+:Lazy log
+```
+
+which will show the recent history of all installed plugins. For the one you want to roll back, move the cursor to the commit you want (e.g. hover on the commit hash), and hit "r" to roll back to that commit. You can also use the `:Lazy revert` command to revert a plugin to a specific commit.

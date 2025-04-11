@@ -26,7 +26,7 @@ return {
             formatters_by_ft = {
                 lua = { "stylua" },
                 sh = { "shfmt" },
-                r = { "styler" },
+                -- r = { "styler" },
             },
             -- The options you set here will be merged with the builtin formatters.
             -- You can also define any custom formatters here.

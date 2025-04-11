@@ -44,6 +44,7 @@ return {
             -- with blink.compat
             compat = {},
             default = { "lsp", "path", "snippets", "buffer", "copilot" },
+            -- default = { "lsp", "path", "snippets", "buffer" },
             providers = {
                 lsp = {
                     name = "lsp",

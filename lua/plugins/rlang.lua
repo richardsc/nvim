@@ -14,7 +14,7 @@ return {
                         if vim.bo.filetype == "rnoweb" then
                             vim.api.nvim_buf_set_keymap(0, "i", "<<", "<Plug>RnwInsertChunk", { noremap = true })
                         elseif vim.bo.filetype == "rmd" or vim.bo.filetype == "quarto" then
-                            vim.api.nvim_buf_set_keymap(0, "i", "`", "<Plug>RmdInsertChunk", { noremap = true })
+                            vim.api.nvim_buf_set_keymap(0, "i", "``", "<Plug>RmdInsertChunk", { noremap = true })
                         end
                     end,
                 },

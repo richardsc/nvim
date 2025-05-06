@@ -55,6 +55,7 @@ return {
         opts = {
             servers = {
                 r_language_server = {
+                    filetypes = { "r", "rnoweb", "rmd", "quarto" },
                     root_dir = function(fname)
                         return require("lspconfig.util").root_pattern("DESCRIPTION", "NAMESPACE", ".Rbuildignore")(
                             fname

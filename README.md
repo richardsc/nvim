@@ -151,12 +151,3 @@ It's so easy to just update all plugins to the most bleeding edge version, but s
 which will show the recent history of all installed plugins. For the one you want to roll back, move the cursor to the commit you want (e.g. hover on the commit hash), and hit "r" to roll back to that commit. You can also use the `:Lazy revert` command to revert a plugin to a specific commit.
 
 There are some helpful tips [here](https://www.reddit.com/r/neovim/comments/1d6iabx/how_do_you_revert_from_lazy_plugin_update/)
-## Random interesting things:
-
-I found this cool tip on reddit somewhere (no idea where, now), about how to run different "instances" of neovim. Doing this looks for a `~/.config/` directory specific to that instance, so it's possible to run different versions of plugins (e.g. LazyVim etc). I have created an alias for `nv` that looks like:
-
-```bash
-alias nv='NVIM_APPNAME=nvimtest nvim'
-```
-
-which then looks for the directory `~/.config/nvimtest/` for all config and plugins. This allows me to do regular Lazy "U" updates to all plugins, as a test to see if anything gets broken, before I do it in my main nvim config.

@@ -16,6 +16,7 @@
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lazydev.nvim": { "branch": "main", "commit": "258d2a5ef4a3e3d6d9ba9da72c9725c53e9afcbd" },
   "lazygit-confirm.nvim": { "branch": "master", "commit": "467d0e3191c847a1760232a4365292fda8d7b420" },
+  "lensline.nvim": { "branch": "main", "commit": "6d0beaa5548ff54b8f3d9b3195aea1369ccf62a4" },
   "lorem.nvim": { "branch": "main", "commit": "81bd3c22d2429712677be53166665ccf89be5a05" },
   "lualine.nvim": { "branch": "master", "commit": "b8c23159c0161f4b89196f74ee3a6d02cdc3a955" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },

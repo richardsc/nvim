@@ -3,8 +3,19 @@ return {
         "LazyVim/LazyVim",
         opts = {
             -- colorscheme = "catppuccin-frappe",
-            colorscheme = "tokyonight-night",
+            -- colorscheme = "minispring",
+            -- colorscheme = "unokai",
+            colorscheme = "duskhaven",
         }
+    },
+    {
+        "danhat1020/silence.nvim",
+        config = function()
+            require("silence").setup({
+                -- options here (see configuration)
+            })
+            -- vim.cmd("colorscheme silence")
+        end,
     },
     {
         "folke/tokyonight.nvim",
@@ -22,5 +33,13 @@ return {
             --     --hl.IlluminatedWordText = { bg = "#ffffff", fg = "#ffffff" }
             -- end,
         },
+    },
+    {
+        "kbraggins/duskhaven.nvim",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            vim.cmd.colorscheme("duskhaven")
+        end,
     }
 }
